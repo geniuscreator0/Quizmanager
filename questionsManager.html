@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="header">
+        <a href="start.html"> Home</a> |
+        <a href="game.html"> Game</a> |
+        <a href="index.html"> Quiz</a> |
+        <a href="questionsManager.html"> Questions Manager</a>
+    </div>
+    
+    <center><h4>Available Questions</h4></center>
+
+    <div id="questionBox" class="questionList">
+
+    </div>
+
+
+    <div class="ui form entryForm">
+        <center><h4>Add New Question</h4></center>
+
+        <div class="field">
+          <input type="text" id="addQuestion" placeholder="Question">
+        </div>
+        <hr />
+        <div class="field">
+          <input type="text" id="addOption1" placeholder="Option 1">
+        </div>
+        <div class="field">
+            <input type="text" id="addOption2" placeholder="Option 2">
+          </div>        
+          <div class="field">
+            <input type="text" id="addOption3" placeholder="Option 3">
+          </div>        
+          <div class="field">
+            <input type="text" id="addOption4" placeholder="Option 4">
+          </div>
+          <hr />
+          <div class="field">
+            <input type="text" id="addAnswer" placeholder="Answer">
+          </div>
+        <hr />
+        <button onclick="addQuestionHandler()" class="ui button" >Add Question</button>
+    </div>
+    <script src="questionsManager.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <a href="start.html"> Home</a> |
+        <a href="game.html"> Game</a> |
+        <a href="index.html"> Quiz</a> |
+        <a href="questionsManager.html"> Questions Manager</a>
+
+    </div>
+    <div class="quiz-wrapper">
+        <div class="question-number">
+            <h3>Question <span class="question-num-value"></span> of 
+                <span class="total-questions"></span>
+            </h3>
+        </div>
+        
+        <div id="questionBox" class="question">
+            ###
+        </div>
+
+        <div class="options">
+
+            <ul id="ul">
+                <li id="opt1" onclick="button(this)">###</li>
+                <li id="opt2" onclick="button(this)">###</li>
+                <li id="opt3" onclick="button(this)">###</li>
+                <li id="opt4" onclick="button(this)">###</li>
+            </ul>
+
+        </div>
+        <div class="score">
+            <div class="next">
+                <button id="btnNext" type="button" onclick="next()">Next</button>
+            </div>
+            <div class="score-card">
+                SCORE: <span id="scoreCard">0</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
